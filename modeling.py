@@ -22,7 +22,7 @@ y_train = df[df.train_test==1].Survived
 
 # Modeling
 # Model: Random Forest Classifier, Decision Tree Classifier, KNN, Naive Bayes Classifier, SVM
-# Ensemble: XGboost、GridsearchCV
+# XGboost、GridsearchCV
 # import models
 from sklearn.model_selection import cross_val_score
 from sklearn.ensemble import RandomForestClassifier

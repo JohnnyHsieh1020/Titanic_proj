@@ -6,7 +6,7 @@
 
 ## Code and Resources Used
 
-**Dataset from :** <https://www.kaggle.com/c/titanic/data>
+**Dataset from :** <https://www.kaggle.com/c/titanic/data>  
 **Python Version :** Python 3.9.4  
 **IDE :** VSCode, Spyder, Jupyter Notebook  
 **Packages :** pandas, numpy, matplotlib, seaborn, plotly, dataframe_image, sklearn  
@@ -47,10 +47,10 @@ Clean the data up to prepare for our models. I made the following changes:
 * Use appear most frequently place to fill the missing values in 'Embarked'.
 
 **Before Cleaning :**
-<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/tree/main/images/before_cleaning.png" width=80%, heigh=80%>  
+<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/before_cleaning.png" width=80%, heigh=80%>  
 
 **After Cleaning :**
-<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/tree/main/images/after_cleaning.png" width=80%, heigh=80%>
+<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/after_cleaning.png" width=80%, heigh=80%>
 
 ## Exploratory Data Analysis (EDA)
 

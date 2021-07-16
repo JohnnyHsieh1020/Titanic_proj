@@ -46,10 +46,10 @@ Clean the data up to prepare for our models. I made the following changes:
 * Use median to fill the missing values in 'Fare'.  
 * Use appear most frequently place to fill the missing values in 'Embarked'.
 
-**Before Cleaning :**
+**Before Cleaning :**  
 <img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/before_cleaning.png" width=80%, heigh=80%>  
 
-**After Cleaning :**
+**After Cleaning :**  
 <img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/after_cleaning.png" width=80%, heigh=80%>
 
 ## Exploratory Data Analysis (EDA)

@@ -47,10 +47,10 @@ Clean the data up to prepare for our models. I made the following changes:
 * Use appear most frequently place to fill the missing values in 'Embarked'.
 
 **Before Cleaning :**  
-<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/before_cleaning.png" width=80%, heigh=80%>  
+<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/before_cleaning.png" width=50%, heigh=50%>  
 
 **After Cleaning :**  
-<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/after_cleaning.png" width=80%, heigh=80%>
+<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/after_cleaning.png" width=50%, heigh=50%>
 
 ## Exploratory Data Analysis (EDA)
 
@@ -82,4 +82,4 @@ Below are a few tables and graphs I made. Try to analyzing and visualizing the d
 
 ## Model performance
 
-I used the prediction from [Extensive_EDA_plus_top2%](https://www.kaggle.com/boss0ayush/extensive-eda-plus-top2) to compare with mine. 
+I used the prediction from [Extensive_EDA_plus_top2%](https://www.kaggle.com/boss0ayush/extensive-eda-plus-top2) to compare with mine.

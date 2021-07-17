@@ -64,7 +64,7 @@ Below are a few tables and graphs I made. Try to analyzing and visualizing the d
     | :------------ |---------------:|
     | **Random Forest Classifier** | 0.810 |
     | **Decision Tree Classifier** | 0.804 |
-    | **KNN** | **0.820** |
+    | **KNN** | <u>**0.820**</u> |
     | **Naive Bayes Classifier** | 0.711 |
     | **SVC** | 0.809 |
     | **XGboost** | 0.818 |
@@ -78,7 +78,7 @@ Below are a few tables and graphs I made. Try to analyzing and visualizing the d
     | **KNN** | 0.820 |
     | **Naive Bayes Classifier** | 0.770 |
     | **SVC** | 0.815 |
-    | **XGboost** | **0.835** |
+    | **XGboost** | <u>**0.835**</u> |
 
 ## Model performance
 
@@ -91,5 +91,5 @@ The **SVC model** has the best performance.
 | **Decision Tree Classifier** | 0.246 |
 | **KNN** | 0.279 |
 | **Naive Bayes Classifier** | 0.282 |
-| **SVC** | **0.217** |
+| **SVC** | <u>**0.217**</u> |
 | **XGboost** | 0.232 |

@@ -9,15 +9,15 @@
 **Dataset from :** <https://www.kaggle.com/c/titanic/data>  
 **Python Version :** Python 3.9.4  
 **IDE :** VSCode, Spyder, Jupyter Notebook  
-**Packages :** pandas, numpy, matplotlib, seaborn, plotly, dataframe_image, sklearn  
+**Packages :** pandas, numpy, missingno, matplotlib, seaborn, plotly, sklearn, xgboost  
 **Reference websites :**
 
-1. <https://www.kaggle.com/boss0ayush/extensive-eda-plus-top2>  
-2. <https://medium.com/analytics-vidhya/random-forest-on-titanic-dataset-88327a014b4d>  
-3. <https://aifreeblog.herokuapp.com/posts/64/Data_Analytics_in_Practice_Titanic/>  
-4. <https://towardsdatascience.com/predicting-the-survival-of-titanic-passengers-30870ccc7e8>  
-5. <https://chtseng.wordpress.com/2017/12/24/kaggle-titanic%E5%80%96%E5%AD%98%E9%A0%90%E6%B8%AC-1/>  
-6. <https://blog.csdn.net/jh1137921986/article/details/84754868>  
+1. [Extensive_EDA_plus_top2%](https://www.kaggle.com/boss0ayush/extensive-eda-plus-top2)  
+2. [Random Forest on Titanic Dataset ⛵.](https://medium.com/analytics-vidhya/random-forest-on-titanic-dataset-88327a014b4d)  
+3. [【進階分析】鐵達尼生存預測 - 手把手資料分析實戰教學](https://aifreeblog.herokuapp.com/posts/64/Data_Analytics_in_Practice_Titanic/)  
+4. [Predicting the Survival of Titanic Passengers](https://towardsdatascience.com/predicting-the-survival-of-titanic-passengers-30870ccc7e8)  
+5. [Kaggle – Titanic倖存預測 #1](https://chtseng.wordpress.com/2017/12/24/kaggle-titanic%E5%80%96%E5%AD%98%E9%A0%90%E6%B8%AC-1/)  
+6. [使用GridSearch對xgboost進行調參（全部流程）](https://blog.csdn.net/jh1137921986/article/details/84754868)  
 
 ## Data info
 

@@ -35,7 +35,7 @@ from sklearn.model_selection import GridSearchCV
 
 
 # Random Forest Classifier
-rf = RandomForestClassifier(random_state = 2,n_estimators=250,min_samples_split=20,oob_score=True)
+rf = RandomForestClassifier(random_state = 2, n_estimators=250, min_samples_split=20, oob_score=True)
 cv = cross_val_score(rf, X_train, y_train, cv=5)
 print(cv)
 print(cv.mean()) # 0.810369719414977
@@ -89,7 +89,7 @@ rf_gs = GridSearchCV(estimator=rf, param_grid=param_grid, cv=5)
 dt = tree.DecisionTreeClassifier(random_state = 1)
 param_grid = { 
    'criterion':['gini','entropy'],
-   'max_depth': np.arange(3, 15)
+   'max_depth': [10, 12, 14, 16, 18, 20]
 }
 
 dt_gs = GridSearchCV(estimator=dt, param_grid=param_grid, cv=5)
@@ -97,9 +97,8 @@ dt_gs = GridSearchCV(estimator=dt, param_grid=param_grid, cv=5)
 # KNN
 knn = KNeighborsClassifier()
 param_grid = { 
-    'n_neighbors': [3, 5, 11, 19],
-    'weights': ['uniform', 'distance'],
-    'algorithm': ['auto', 'ball_tree', 'kd_tree', 'brute']
+    'n_neighbors': [4, 5, 6, 7, 8],
+    'weights': ['uniform', 'distance']
 }
 
 knn_gs = GridSearchCV(estimator=knn, param_grid=param_grid, cv=5)
@@ -114,7 +113,7 @@ gnb_gs = GridSearchCV(estimator=gnb, param_grid=param_grid, cv=5)
 
 # SVM
 svc = SVC(random_state = 1)
-param_grid = { 
+param_grid = {
     'C': [0.1, 1, 10, 100, 1000], 
     'gamma': [1, 0.1, 0.01, 0.001, 0.0001],
     'kernel': ['rbf']
@@ -124,7 +123,7 @@ svc_gs = GridSearchCV(estimator=svc, param_grid=param_grid,refit = True, verbose
 
 # XGboost
 gbm = xgb.XGBClassifier()
-param_grid = { 
+param_grid = {
     'n_estimators': [10, 50, 100, 300],
     'min_child_weight': [1, 5, 10],
     'gamma': [0.5, 1, 1.5, 2, 5],
@@ -135,13 +134,14 @@ param_grid = {
 
 gbm_gs = GridSearchCV(estimator=gbm, param_grid=param_grid, cv=5)
 
-# Predict
+# Fit
 rf.fit(X_train,y_train)
 dt.fit(X_train,y_train)
 knn.fit(X_train,y_train)
 gnb.fit(X_train,y_train)
 svc.fit(X_train,y_train)
 gbm.fit(X_train, y_train)
+
 rf_gs.fit(X_train,y_train)
 dt_gs.fit(X_train,y_train)
 knn_gs.fit(X_train,y_train)
@@ -149,25 +149,29 @@ gnb_gs.fit(X_train,y_train)
 svc_gs.fit(X_train,y_train)
 gbm_gs.fit(X_train,y_train)
 
-rf_gs.best_score_ # 0.8170861841692298, 0.8182097796748478
+# Check best score
+rf_gs.best_score_ # 0.8182097796748478
 dt_gs.best_score_ # 0.8103822735547046
 knn_gs.best_score_ # 0.8204695248258111
 gnb_gs.best_score_ # 0.7700269914004143
 svc_gs.best_score_ # 0.8159312033142928
-gbm_gs.best_score_ # 0.8339087314041805, 0.8350574351892537
+gbm_gs.best_score_ # 0.8350574351892537
 
+# Predict
 pred_rf = rf.predict(X_test).astype(int)
 pred_dt = dt.predict(X_test).astype(int)
 pred_knn = knn.predict(X_test).astype(int)
 pred_gnb = gnb.predict(X_test).astype(int)
 pred_svc = svc.predict(X_test).astype(int)
 pred_gbm = gbm.predict(X_test).astype(int)
+
 pred_rf_gs = rf_gs.best_estimator_.predict(X_test).astype(int)
 pred_dt_gs = dt_gs.best_estimator_.predict(X_test).astype(int)
 pred_knn_gs = knn_gs.best_estimator_.predict(X_test).astype(int)
 pred_gnb_gs = gnb_gs.best_estimator_.predict(X_test).astype(int)
 pred_svc_gs = svc_gs.best_estimator_.predict(X_test).astype(int)
 pred_gbm_gs = gbm_gs.best_estimator_.predict(X_test).astype(int)
+
 
 # Check Performance
 from sklearn.metrics import mean_absolute_error
@@ -180,10 +184,27 @@ score_gnb = mean_absolute_error(default_ans.Survived, pred_gnb) # MAE =  0.33732
 score_svc = mean_absolute_error(default_ans.Survived, pred_svc) # MAE = 0.21770334928229665
 score_gbm = mean_absolute_error(default_ans.Survived, pred_gbm) # MAE = 0.23444976076555024
 
-score_rf_gs = mean_absolute_error(default_ans.Survived, pred_rf_gs) # MAE = 0.22488038277511962, 0.22248803827751196
+score_rf_gs = mean_absolute_error(default_ans.Survived, pred_rf_gs) # MAE = 0.22248803827751196
 score_dt_gs = mean_absolute_error(default_ans.Survived, pred_dt_gs) # MAE = 0.24641148325358853
 score_knn_gs = mean_absolute_error(default_ans.Survived, pred_knn_gs) # MAE = 0.2799043062200957
 score_gnb_gs = mean_absolute_error(default_ans.Survived, pred_gnb_gs) # MAE = 0.2822966507177033
-score_svc_gs = mean_absolute_error(default_ans.Survived, pred_svc_gs) # MAE = 0.23923444976076555
-score_gbm_gs = mean_absolute_error(default_ans.Survived, pred_gbm_gs) # MAE = 0.22248803827751196, 0.23205741626794257
-print(score_rf, score_dt, score_knn, score_gnb, score_svc, score_gbm, score_rf_gs, score_dt_gs, score_knn_gs, score_gnb_gs, score_svc_gs, score_gbm_gs )
+score_svc_gs = mean_absolute_error(default_ans.Survived, pred_svc_gs) # MAE = 0.23923444976076555 
+score_gbm_gs = mean_absolute_error(default_ans.Survived, pred_gbm_gs) # MAE = 0.23205741626794257
+results = {
+    'rf': score_rf, 
+    'dt': score_dt, 
+    'knn': score_knn, 
+    'gnb': score_gnb, 
+    'svc': score_svc, 
+    'gbm': score_gbm, 
+    'rf_gs': score_rf_gs, 
+    'dt_gs': score_dt_gs, 
+    'knn_gs': score_knn_gs, 
+    'gnb_gs': score_gnb_gs, 
+    'svc_gs': score_svc_gs, 
+    'gbm_gs': score_gbm_gs
+}
+
+best_model = min(results, key=results. get)
+print('The best model: ', best_model)
+print('Score: ', results[best_model])

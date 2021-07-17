@@ -66,7 +66,7 @@ Below are a few tables and graphs I made. Try to analyzing and visualizing the d
     | **Decision Tree Classifier** | 0.804 |
     | **KNN** | **0.820** |
     | **Naive Bayes Classifier** | 0.711 |
-    | **SVM** | 0.809 |
+    | **SVC** | 0.809 |
     | **XGboost** | 0.818 |
 
 2. I also used GridsearchCV to find out the best group of parameters that can optimize these models.
@@ -77,9 +77,19 @@ Below are a few tables and graphs I made. Try to analyzing and visualizing the d
     | **Decision Tree Classifier** | 0.810 |
     | **KNN** | 0.820 |
     | **Naive Bayes Classifier** | 0.770 |
-    | **SVM** | 0.815 |
+    | **SVC** | 0.815 |
     | **XGboost** | **0.835** |
 
 ## Model performance
 
-I used the prediction from [Extensive_EDA_plus_top2%](https://www.kaggle.com/boss0ayush/extensive-eda-plus-top2) to compare with mine.
+I used the prediction from [Extensive_EDA_plus_top2%](https://www.kaggle.com/boss0ayush/extensive-eda-plus-top2) to compare with mine.  
+The **SVC model** has the best performance.  
+
+| Model  | MAE  |
+| :------------ |---------------:|
+| **Random Forest Classifier** | 0.222 |
+| **Decision Tree Classifier** | 0.246 |
+| **KNN** | 0.279 |
+| **Naive Bayes Classifier** | 0.282 |
+| **SVC** | **0.217** |
+| **XGboost** | 0.232 |

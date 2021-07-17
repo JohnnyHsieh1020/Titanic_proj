@@ -80,7 +80,7 @@ Below are a few tables and graphs I made. Try to analyzing and visualizing the d
     | **SVC** | 0.815 |
     | **XGboost** | ***0.835*** |
 
-## Model performance
+## Model Performance
 
 I used the prediction from [Extensive_EDA_plus_top2%](https://www.kaggle.com/boss0ayush/extensive-eda-plus-top2) to compare with mine.  
 The **SVC model** has the best performance.  

@@ -55,6 +55,24 @@ Clean the data up to prepare for our models. I made the following changes:
 ## Exploratory Data Analysis (EDA)
 
 Below are a few tables and graphs I made. Try to analyzing and visualizing the dataset.
+<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/Age_range%20vs%20Suvived%3D1.png" width=70%, heigh=65%>
+<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/Age_range_Survived_rate.png" width=15%, heigh=30%>  
+<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/Cabin_count%20vs%20Suvived%3D1.png" width=70%, heigh=65%>
+<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/Cabin_count_Survived_rate.png" width=15%, heigh=30%>  
+<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/Embarked%20vs%20Suvived%3D1.png" width=70%, heigh=65%>
+<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/Embarked_Survived_rate.png" width=15%, heigh=30%>  
+<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/Family_count%20vs%20Suvived%3D1.png" width=70%, heigh=65%>
+<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/Family_count_Survived_rate.png" width=15%, heigh=30%>  
+<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/Fare_range%20vs%20Suvived%3D1.png" width=70%, heigh=65%>
+<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/Fare_range_Survived_rate.png" width=15%, heigh=30%>  
+<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/Pclass%20vs%20Survived%3D1.png" width=70%, heigh=65%>
+<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/Pclass_Survived_rate.png" width=15%, heigh=30%>  
+<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/Sex%20vs%20Pclass%20vs%20Survived%3D1.png" width=70%, heigh=65%>
+<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/Sex_Pclass_Survived_rate.png" width=15%, heigh=30%>  
+<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/Sex%20vs%20Survived%3D1.png" width=70%, heigh=65%>
+<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/Sex_Survived_rate.png" width=15%, heigh=30%>  
+<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/new_cabin%20vs%20Suvived%3D1.png" width=70%, heigh=65%>
+<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/new_cabin_Survived_rate.png" width=15%, heigh=30%>  
 
 ## Model Building
 

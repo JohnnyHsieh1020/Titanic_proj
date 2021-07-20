@@ -111,3 +111,7 @@ The **SVC model** has the best performance.
 | **Naive Bayes Classifier** | 0.282 |
 | **SVC** | ***0.217*** |
 | **XGboost** | 0.232 |
+
+## Kaggle Competition
+
+<img src="https://github.com/JohnnyHsieh1020/Titanic_proj/blob/main/images/Kaggle%20competition%20result.png" width=70%, heigh=65%>
